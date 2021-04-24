@@ -4,9 +4,18 @@ automated training of faster rcnn for iterative creation of segmentation dataset
 ## Programming language
 - Python 3.7.7
 
-## Hardware and OS
-The code has been developed and tested with linux on the IBM Power9 CPU architecture (ppc64le) using NVIDIA Tesla V100 GPUs.
+## OS requirements
+- OS: Red Hat Enterprise Linux
+- Kernel: Linux 4.14.0-115.19.1.el7a.ppc64le
+- Architecture: ppc64-le
+
+## Hardware requirements
+The code has been developed and tested on the IBM Power9 CPU architecture (ppc64le) using NVIDIA Tesla V100 GPUs.
 This version of the code requires only a single NVIDIA Tesla V100 GPU, 4 CPU cores and 6gb of RAM to run.
+
+## Software requirements
+- Conda package manager version 4.7.12
+- CUDA 10.2.89
 
 ## Dependencies
 All dependencies are listed in `environment.yml`
