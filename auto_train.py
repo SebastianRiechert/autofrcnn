@@ -308,7 +308,7 @@ def parse_args():
 
     parser.add_argument('--name', default='default', help='name of the training run')
     parser.add_argument('--experiment-name', help='name of the experiment')
-    parser.add_argument('--data-path', default='small_data.csv', help='csv containing image names, labels, etc')
+    parser.add_argument('--data-path', default='datasets/small_data.csv', help='csv containing image names, labels, etc')
     parser.add_argument('--imgs-path', default='kaggle/wsi', help='path to folder containing the images')
     parser.add_argument('--model', default='fasterrcnn_resnet50_fpn', help='model')
     parser.add_argument('--device', default='cuda', help='device')
@@ -321,7 +321,7 @@ def parse_args():
                         help='number of total epochs to run')
     parser.add_argument('-j', '--workers', default=8, type=int, metavar='N',
                         help='number of data loading workers (default: 8)')
-    parser.add_argument('--lr', default=0.005, type=float,
+    parser.add_argument('--lr', default=0.001, type=float,
                         help='initial learning rate, 0.02 is the default value for training '
                         'on 8 gpus and 2 images_per_gpu '
                         '::: 0.02/8*$NGPU')
